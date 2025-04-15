@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Care - Tech-Verse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Tech-Verse</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="best-deals.html">Best Deals</a>
+            <a href="add-review.html">Add Review</a>
+            <a href="customer-care.html" class="active">Customer Care</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="customer-care-page">
+        <h1>Customer Care</h1>
+        <p class="care-intro">Having issues with a product? Fill out the form below and our team will assist you.</p>
+
+        <form class="complaint-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="order-number">Order Number</label>
+                <input type="text" id="order-number" name="order-number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product">Product Name</label>
+                <input type="text" id="product" name="product" required>
+            </div>
+
+            <div class="form-group">
+                <label for="purchase-date">Purchase Date</label>
+                <input type="date" id="purchase-date" name="purchase-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="issue-type">Type of Issue</label>
+                <select id="issue-type" name="issue-type" required>
+                    <option value="">Select an issue type</option>
+                    <option value="defective">Defective Product</option>
+                    <option value="damaged">Damaged in Transit</option>
+                    <option value="wrong-item">Wrong Item Received</option>
+                    <option value="not-working">Not Working as Advertised</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Describe the Issue</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="images">Upload Images (Optional)</label>
+                <input type="file" id="images" name="images" multiple accept="image/*">
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Complaint</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Tech-Verse</h3>
+                <p>Your trusted source for honest and detailed tech reviews since 2025.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Advertise with us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tech-Verse. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

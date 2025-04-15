@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Review - Tech-Verse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Tech-Verse</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="best-deals.html">Best Deals</a>
+            <a href="add-review.html" class="active">Add Review</a>
+            <a href="customer-care.html">Customer Care</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="add-review-page">
+        <h1>Share Your Experience</h1>
+        <p class="review-intro">Help others make informed decisions by sharing your experience with tech products.</p>
+
+        <form class="review-form">
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" name="product-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Product Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="smartphone">Smartphone</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="smartwatch">Smartwatch</option>
+                    <option value="headphones">Headphones</option>
+                    <option value="camera">Camera</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="purchase-date">Purchase Date</label>
+                <input type="date" id="purchase-date" name="purchase-date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Rating</label>
+                <div class="rating-input">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">★</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pros">Pros</label>
+                <textarea id="pros" name="pros" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="cons">Cons</label>
+                <textarea id="cons" name="cons" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="review">Detailed Review</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="photos">Add Photos (Optional)</label>
+                <input type="file" id="photos" name="photos" multiple accept="image/*">
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Review</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Tech-Verse</h3>
+                <p>Your trusted source for honest and detailed tech reviews since 2025.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Advertise with us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tech-Verse. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
